@@ -216,27 +216,26 @@ elif authentication_status == True:
             
              else:
                 st.warning("Inserisci un'equazione valida per calcolare il risultato.") 
-        elif delta < 0:
-                st.success("✅ Calcolo completato con successo!")
-            
-        with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
-                # STAMPIAMO I PASSAGGI ALGEBRICI QUI!
-                st.markdown(passaggi_algebra)
-                st.markdown("#### 2. Calcolo del Delta:")
-                st.latex(r"\Delta = b^2 - 4ac")
-                st.write(f"**Sostituzione:** $({b})^2 - 4 \\cdot ({a}) \\cdot ({c}) = {delta}$")
-                st.write(f"**Analisi del risultato:** Poiché il Delta è negativo ($\Delta < 0$), l'equazione associata non ha soluzioni reali.")
+      elif delta < 0:
+    st.success("✅ Calcolo completato con successo!")
+    
+    with st.expander("📁 Mostra Formule e Procedimento Passo dopo Passo"):
+        st.markdown(passaggi_algebra)
+        st.markdown("#### 2. Calcolo del Delta:")
+        st.latex(r"\Delta = b^2 - 4ac")
+        st.write(f"**Sostituzione:** $({b})^2 - 4 \\cdot ({a}) \\cdot ({c}) = {delta}$")
+        st.write(f"**Analisi del risultato:** Poiché il Delta è negativo ($\Delta < 0$), l'equazione associata non ha soluzioni reali.")
 
-            # Titolo dinamico del risultato
-                if simbolo == "=":
-                    st.markdown("### 🎯 Risultato dell'Equazione:")
-                    st.info("**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
-                else:
-                    st.markdown("### 🎯 Risultato della Disequazione:")
-                if simbolo == ">":
-                    st.info("**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
-                elif simbolo == "<":
-                    st.info("**Soluzione:** \n\nImpossibile ($x \\in \\emptyset$)") 
+    # Titolo dinamico del risultato (questo deve essere indentato correttamente!)
+    if simbolo == "=":
+        st.markdown("### 🎯 Risultato dell'Equazione:")
+        st.info(f"**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
+    else:
+        st.markdown("### 🎯 Risultato della Disequazione:")
+        if simbolo == ">":
+            st.info(f"**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
+        elif simbolo == "<":
+            st.info(f"**Soluzione:** \n\nImpossibile ($x \\in \\emptyset$)")
 
 
     # =================================================================
