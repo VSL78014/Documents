@@ -210,8 +210,8 @@ elif authentication_status == True:
              elif simbolo == "<":
                  st.info("Soluzione: Impossibile (Nessuna soluzione reale)")
             
-        else:
-            st.warning("Inserisci un'equazione valida per calcolare il risultato.") 
+            else:
+                st.warning("Inserisci un'equazione valida per calcolare il risultato.") 
         elif delta < 0:
                 st.success("✅ Calcolo completato con successo!")
             
