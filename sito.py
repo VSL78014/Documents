@@ -224,9 +224,9 @@ elif authentication_status == True:
                 st.write(f"**Analisi del risultato:** Poiché il Delta è negativo ($\Delta < 0$), l'equazione associata non ha soluzioni reali.")
 
             # Titolo dinamico del risultato
-            if simbolo == "=":
-                st.markdown("### 🎯 Risultato dell'Equazione:")
-                st.info("**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
+                if simbolo == "=":
+                    st.markdown("### 🎯 Risultato dell'Equazione:")
+                    st.info("**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
             else:
                 st.markdown("### 🎯 Risultato della Disequazione:")
                 if simbolo == ">":
