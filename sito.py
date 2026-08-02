@@ -215,7 +215,7 @@ elif authentication_status == True:
         elif delta < 0:
                 st.success("✅ Calcolo completato con successo!")
             
-             with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
+        with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
                 # STAMPIAMO I PASSAGGI ALGEBRICI QUI!
                 st.markdown(passaggi_algebra)
                 st.markdown("#### 2. Calcolo del Delta:")
