@@ -330,11 +330,11 @@ elif authentication_status == True:
                     st.markdown("Formule:")
                     st.latex(r"y = \frac {g \cdot x^2}{2 \cdot v^2_0}")
                     st.latex(r"""
-            \begin{cases} 
-            x = v_{0x} \cdot t \\ 
-            y = y_0 + v_{0y} \cdot t - \frac{1}{2}g \cdot t^2 
-            \end{cases}
-            """)
+                    \begin{cases} 
+                    x = v_{0x} \cdot t \\ 
+                    y = y_0 + v_{0y} \cdot t - \frac{1}{2}g \cdot t^2 
+                    \end{cases}
+                    """)
                 with st.expander("🔹I tre princìpi della dinamica"):
                     st.markdown("**Il primo principio della dinamica**")
                     st.markdown("**Caratteristica:** Il primo principio della dinamica, noto anche come principio d'inerzia, stabilisce che un corpo mantiene il proprio stato di quiete o di moto rettilineo uniforme finché non interviene una forza esterna a modificarlo. Di conseguenza, un oggetto su cui non agisce alcuna forza (o la cui risultante è nulla) non accelera.")
