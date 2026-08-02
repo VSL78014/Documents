@@ -212,8 +212,8 @@ elif authentication_status == True:
             
         else:
             st.warning("Inserisci un'equazione valida per calcolare il risultato.") 
-    elif delta < 0:
-            st.success("✅ Calcolo completato con successo!")
+        elif delta < 0:
+                st.success("✅ Calcolo completato con successo!")
             
             with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
              with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
