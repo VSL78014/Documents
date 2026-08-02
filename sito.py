@@ -92,7 +92,7 @@ elif authentication_status == True:
                 stringa_spaziata = re.sub(r'([><=])', r' \1 ', stringa_utente)
                 pezzi = re.findall(r'[+-]?\d*x\^2|[+-]?\d*x|[+-]?\d+|[><=]', stringa_spaziata)
                 
-                simbolo = ""
+            simbolo = ""
                 if ">" in stringa_utente:
                     simbolo = ">"
                 elif "<" in stringa_utente:
