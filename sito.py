@@ -14,6 +14,10 @@ utenti = {
         "claudiocalanna88@gmail.com": {
             "name": "Claudio",
             "password": "JessaSolina89"
+        },
+        "Nderi": {
+            "name": "Dario",
+            "password": "JessaSolina89"
         }
     }
 }
