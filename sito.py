@@ -199,17 +199,20 @@ elif authentication_status == True:
                 elif simbolo == "<":
                     st.info(f"**Soluzione (Valori Interni):** \n\n ${x1_latex} < x < {x2_latex}$")
         elif delta == 0:
-            if a != 0:
-                x = -b / (2 * a)
-                st.write(f"Sostituisco i valori nella formula: x = -({b}) / (2 * {a})")
-                st.success(f"L'equazione associata ha una sola soluzione: x = {x}")
+           if a != 0:
+             x = -b / (2 * a)
+             st.write(f"Sostituisco i valori nella formula: x = -({b}) / (2 * ({a}))")
+             st.success(f"L'equazione associata ha una sola soluzione: x = {x}")
+        
+        # Ora il controllo del simbolo è DENTRO l'if, quindi al sicuro!
+             if simbolo == ">":
+                 st.info(f"x != {x}")
+             elif simbolo == "<":
+                 st.info("Soluzione: Impossibile (Nessuna soluzione reale)")
+            
         else:
-            st.warning("Inserisci un'equazione valida per calcolare il risultato.")
-        if simbolo == ">":
-            st.info(f"x ∈ ℝ con x ≠ {x}")
-        elif simbolo == "<":
-                st.info("**Soluzione:** Impossibile (Nessuna soluzione reale, x ∈ ∅)")
-        elif delta < 0:
+            st.warning("Inserisci un'equazione valida per calcolare il risultato.") 
+    elif delta < 0:
             st.success("✅ Calcolo completato con successo!")
             
             with st.expander("📂 Mostra Formule e Procedimento Passo dopo Passo"):
@@ -231,12 +234,6 @@ elif authentication_status == True:
                     st.info("**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
                 elif simbolo == "<":
                     st.info("**Soluzione:** \n\nImpossibile ($x \\in \\emptyset$)") 
-
-        elif sub_algebra == "La Parabola":
-            st.subheader("Formule della Parabola")
-            
-        elif sub_algebra == "La Retta":
-            st.subheader("Geometria Analitica: La Retta")
 
 
     # =================================================================
