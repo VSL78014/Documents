@@ -227,8 +227,8 @@ elif authentication_status == True:
                 if simbolo == "=":
                     st.markdown("### 🎯 Risultato dell'Equazione:")
                     st.info("**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
-            else:
-                st.markdown("### 🎯 Risultato della Disequazione:")
+                else:
+                    st.markdown("### 🎯 Risultato della Disequazione:")
                 if simbolo == ">":
                     st.info("**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
                 elif simbolo == "<":
