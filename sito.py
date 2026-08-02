@@ -227,15 +227,15 @@ elif authentication_status == True:
             st.write(f"**Analisi del risultato:** Poiché il Delta è negativo ($\Delta < 0$), l'equazione associata non ha soluzioni reali.")
     
         # Titolo dinamico del risultato (questo deve essere indentato correttamente!)
-        if simbolo == "=":
-            st.markdown("### 🎯 Risultato dell'Equazione:")
-            st.info(f"**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
-        else:
-            st.markdown("### 🎯 Risultato della Disequazione:")
-            if simbolo == ">":
-                st.info(f"**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
-            elif simbolo == "<":
-                st.info(f"**Soluzione:** \n\nImpossibile ($x \\in \\emptyset$)")
+            if simbolo == "=":
+                st.markdown("### 🎯 Risultato dell'Equazione:")
+                st.info(f"**Soluzione dell'equazione:** \n\nNessuna soluzione reale ($\Delta < 0$)")
+            else:
+                st.markdown("### 🎯 Risultato della Disequazione:")
+                if simbolo == ">":
+                    st.info(f"**Soluzione:** \n\nQualsiasi valore di $x$ ($x \\in \\mathbb{R}$)")
+                elif simbolo == "<":
+                    st.info(f"**Soluzione:** \n\nImpossibile ($x \\in \\emptyset$)")
 
 
     # =================================================================
