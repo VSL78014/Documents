@@ -10,6 +10,10 @@ utenti = {
         "bonarrigovasyl@gmail.com": {
             "name": "Vasyl",
             "password": "JessaSolina89"
+        },
+        "Nderi": {
+            "name": "Dario",
+            "password": "JessaSolina89"
         }
     }
 }
