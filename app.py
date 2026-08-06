@@ -86,17 +86,17 @@ elif authentication_status == True:
             stringa_utente = st.text_input("Inserisci l'equazione o disequazione:")
             if stringa_utente:
              stringa_spaziata = re.sub(r'([><=])', r' \1 ', stringa_utente)
-            pezzi = re.findall(r'[+-]?\d*x\^2|[+-]?\d*x|[+-]?\d+|[><=]', stringa_spaziata)
-            simbolo = ""
-        if ">" in stringa_utente:
-            simbolo = ">"
-        elif "<" in stringa_utente:
-            simbolo = "<"
-        elif "=" in stringa_utente:
-            simbolo = "="
-        else:
-            simbolo = "="
-            simbolo = "="
+             pezzi = re.findall(r'[+-]?\d*x\^2|[+-]?\d*x|[+-]?\d+|[><=]', stringa_spaziata)
+             simbolo = ""
+            if ">" in stringa_utente:
+                simbolo = ">"
+            elif "<" in stringa_utente:
+                simbolo = "<"
+            elif "=" in stringa_utente:
+                simbolo = "="
+            else:
+                simbolo = "="
+                simbolo = "="
         st.write(f"Operazione inserita: `{stringa_utente}`")
         a = 0.0
         b = 0.0
