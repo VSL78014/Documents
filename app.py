@@ -246,12 +246,28 @@ elif authentication_status == True:
     # =================================================================
     elif sezione == "Geometria":
         st.title("📐 Formulario di Geometria")
-        with st.expander("Circonferenze in relazione"):
+        with st.expander("🔸Circonferenze In Relazione"):
             st.markdown("**Esterne:** Due circonferenze si definiscono esterne quando non hanno nessun punto in comune")
             st.markdown("**Tangenti:** Due circonferenze si definiscono esterne quandohanno un punto in comune")
             st.markdown("**Secanti:** Due circonferenze si definiscono esterne quando hanno due punti in comune")
-        
-       
+        with st.expander("🔹Poligoni Inscritti e Circoscritti"):
+            st.markdown("**Inscritto:** Un poligono inscritto in una circonferenza è una figura geometrica in cui tutti i suoi vertici appartengono alla circonferenza")
+            st.markdown("**Circoscritto:** Un poligono circoscritto a una circonferenza è un poligono in cui tutti i lati sono tangenti alla circonferenza")
+        with st.expander("♦️ Quadrilateri"):
+            st.markdown("** Quadrilatero Inscrivibile:** Un quadrilatero è inscrivibile in una circonferenza se e solo se gli angoli opposti sono supplementari")
+            st.latex(r" S_somma_angoli = 180`")
+            st.markdown("** Quadrilatero Circoscrivibile:** Un quadrilatero  è circoscrivibile a una circonferenza se e solo se la somma delle lunghezze di due lati opposti è uguale alla somma delle lunghezze degli altri due lati")
+            st.info("💡 *Nota:* In pratica, se prendi un lato e lo sommi a quello che gli sta di fronte, devi ottenere lo stesso risultato sommando gli altri due lati rimasti")
+        with st.expander("◽Area"):
+            st.markdown("**Teorema:** In geometria, due figure piane sono equivalenti (o equiestese) quando hanno la stessa area, ovvero occupano la stessa estensione sul piano, indipendentemente dalla loro forma")
+            st.markdown("**Teorema Con Parallelogramma e Rettangolo:** Un parallelogramma è equivalente a un rettangolo che possiede la stessa base e la stessa altezza")
+            st.markdown("**Teorema Con Triangolo e Rettangolo:** Un triangolo è equivalente alla metà di un rettangolo avente la stessa base e la stessa altezza")
+            st.markdown("**Teorema Con Trapezio e Triangolo:** Un trapezio è equivalente a un triangolo che possiede la stessa altezza ( h ) e una base pari alla somma delle due basi del trapezio ( B+b )")
+        with st.expander("⬛Similitudine"):
+            st.markdown("**Primo Criterio:** Due triangoli sono simili se hanno due angoli rispettivamente congruenti")
+            st.markdown("**Secondo Criterio:**  Due triangoli sono simili se hanno un angolo congruente e i due lati che lo comprendono in proporzione")
+            st.markdown("**Terzo Criterio:**  Due triangoli sono simili se hanno tutti e tre i lati ordinatamente proporzionali tra loro")
+            
 
 
     # =================================================================
