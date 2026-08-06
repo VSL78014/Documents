@@ -154,8 +154,8 @@ elif authentication_status == True:
             b_sym = sp.Rational(str(b))
             c_sym = sp.Rational(str(c))
             delta_sym = b_sym**2 - 4 * a_sym * c_sym
-            xv = -b / (2 * a)
-            yv = -delta_sym / (4 * a)
+            xv = -b_sym / (2 * a_sym)
+            yv = -delta_sym / (4 * a_sym)
             
             x1_exact = (-b_sym - sp.sqrt(delta_sym)) / (2 * a_sym)
             x2_exact = (-b_sym + sp.sqrt(delta_sym)) / (2 * a_sym)
@@ -168,7 +168,7 @@ elif authentication_status == True:
             x1_latex = sp.latex(x1_exact)
             x2_latex = sp.latex(x2_exact)
             st.markdown("###  Coordinate del Vertice:")
-            st.latex(f"V = \\left( {xv}, {yv} \\right)")
+            st.latex(f"V = \\left( {sp.latex(xv)}, {sp.latex(yv)} \\right)")
 
             # --- GRAFICA DI STREAMLIT (TUTTA INDENTATA DENTRO IL DELTA > 0) ---
             st.success("✅ Calcolo completato con successo!")
