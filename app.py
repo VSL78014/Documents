@@ -117,7 +117,7 @@ elif authentication_status == True:
                     coeff_c += float(p)
             return coeff_a, coeff_b, coeff_c
 
-        passaggi_algebra = "### 🛠️ Passaggi Algebrici (Forma Normale):\n"
+        passaggi_algebra = "###  Passaggi Algebrici (Forma Normale):\n"
 
         if "=" in stringa_utente:
             parti = stringa_utente.split("=")
@@ -167,7 +167,7 @@ elif authentication_status == True:
             # Generazione stringhe LaTeX per il sito
             x1_latex = sp.latex(x1_exact)
             x2_latex = sp.latex(x2_exact)
-            st.markdown("### 📍 Coordinate del Vertice:")
+            st.markdown("###  Coordinate del Vertice:")
             st.latex(f"V = \\left( {xv}, {yv} \\right)")
 
             # --- GRAFICA DI STREAMLIT (TUTTA INDENTATA DENTRO IL DELTA > 0) ---
