@@ -246,7 +246,7 @@ elif authentication_status == True:
     # =================================================================
     elif sezione == "Geometria":
         st.title("📐 Formulario di Geometria")
-        with st.expander("Circonferenze in relazione")
+        with st.expander("Circonferenze in relazione"):
         st.markdown("**Esterne:**" "Due circonferenze si definiscono esterne quando non hanno nessun punto in comune")
         st.markdown("**Tangenti:**" "Due circonferenze si definiscono esterne quandohanno un punto in comune")
         st.markdown("**Secanti:**" "Due circonferenze si definiscono esterne quando hanno due punti in comune")
