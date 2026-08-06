@@ -78,7 +78,7 @@ elif authentication_status == True:
         st.title("Strumenti e Formule di Algebra")
         
         # Sotto-menu per l'Algebra
-        sub_algebra = st.selectbox("Scegli l'argomento:", ["Risolutore Equazioni/Disequazioni", "La Parabola", "La Retta"])
+        sub_algebra = st.selectbox("Scegli l'argomento:", ["Risolutore Equazioni/Disequazioni"])
         
         if sub_algebra == "Risolutore Equazioni/Disequazioni":
             st.subheader("Risolutore Automatico di 2° Grado")
